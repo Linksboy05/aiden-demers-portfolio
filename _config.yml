@@ -1,0 +1,8 @@
+title: My Portfolio
+name: Aiden Demers
+email: linksboy05@gmail.com
+
+Collections:
+design:
+output: true
+permmalink: /:collection/:path/
