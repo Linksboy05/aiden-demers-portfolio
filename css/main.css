@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+@font-face {
+    font-family: 'Luxurious Roman';
+    src: url('fonts/LuxuriousRoman-Regular.ttf') format('truetype');
+	
+}
+@font-face {
+	font-family: 'outfit';
+	src:url()
+	
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logos {
+    text-align: center;
+}
+
+.logo-main {
+    width: 200px;
+    margin: 20px auto;
+}
+
+.logo-types {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.logo-group {
+    text-align: center;
+}
+
+.logo-group img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.colors .color-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.color-swatch {
+    flex: 1 1 20%;
+    min-width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.typography .type-sample {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.typography .luxurious {
+    font-family: 'Luxurious Roman', serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.typography .outfit {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+}
+
+.mockups {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mockups img {
+    width: 120px;
+    height: auto;
+}
+
+
