@@ -1,0 +1,237 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Color Variables */
+:root {
+  --purple: #9b59b6;
+  --dark-purple: #5e3370;
+  --white: #ffffff;
+  --black: #0a0a0a;
+  --soft-black: #1a1a1a;
+}
+
+/* Navigation */
+nav {
+  background: var(--soft-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--purple);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--purple);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to bottom right, #1a1a1a, #000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--purple);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* Artworks Scroll */
+.artworks-scroll {
+  padding: 2rem;
+  background: var(--soft-black);
+}
+
+.artworks-scroll h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--purple);
+}
+
+.art-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scrollbar-color: var(--purple) transparent;
+}
+
+.art-card {
+  min-width: 220px;
+  height: 150px;
+  background: var(--dark-purple);
+  color: var(--white);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* About Section */
+.about {
+  padding: 2rem;
+  background: var(--white);
+  color: var(--black);
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  color: var(--purple);
+}
+
+/* Gallery */
+.gallery {
+  padding: 2rem;
+  background: var(--soft-black);
+}
+
+.gallery h2 {
+  text-align: center;
+  color: var(--purple);
+  margin-bottom: 2rem;
+}
+
+.gallery-section {
+  margin-bottom: 2rem;
+}
+
+.gallery-section h3 {
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  background: var(--dark-purple);
+  height: 120px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--white);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer .social-icons {
+  margin: 1rem 0;
+}
+
+footer .social-icons a {
+  color: var(--purple);
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .social-icons a:hover {
+  text-decoration: underline;
+}
+
+footer p:last-child {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 1rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--soft-black);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .art-card {
+    min-width: 180px;
+  }
+}
+/* CSS Document */
+
